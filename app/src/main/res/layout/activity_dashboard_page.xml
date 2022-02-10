@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".page.DashboardPage">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:paddingTop="10sp"
+        android:paddingBottom="10sp"
+        android:background="@drawable/toolbar_dashboard"
+        android:layout_height="?actionBarSize">
+
+
+        <ImageView
+            android:layout_width="30sp"
+            android:layout_marginLeft="10sp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/menu_white"
+            android:layout_height="30sp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_centerVertical="true"
+            android:text="Dashboard"
+            android:gravity="center_horizontal"
+            android:textSize="16sp"
+            android:textColor="@color/white"
+            android:layout_height="wrap_content"/>
+
+        <ImageView
+            android:layout_width="30sp"
+            android:layout_marginRight="10sp"
+             android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_baseline_notifications_24"
+            android:layout_height="30sp"/>
+
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_marginTop="20sp"
+        android:background="@drawable/searc_homepage"
+        android:layout_width="match_parent"
+        android:gravity="center_vertical"
+        android:layout_marginLeft="15sp"
+        android:layout_marginRight="15sp"
+        android:paddingTop="10sp"
+        android:paddingBottom="10sp"
+        android:paddingLeft="11sp"
+        android:paddingRight="11sp"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="30sp"
+            android:src="@drawable/ic_baseline_search_24"
+            android:layout_height="30sp"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:background="@null"
+            android:layout_marginLeft="8sp"
+            android:id="@+id/search"
+            android:singleLine="true"
+            android:hint="Enter Task Here"
+            android:minLines="1"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <ProgressBar
+            android:layout_width="35sp"
+            android:layout_centerInParent="true"
+            android:id="@+id/pageLoader"
+            android:layout_gravity="center_horizontal"
+             android:layout_height="35sp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_below="@id/pageLoader"
+            android:id="@+id/retry"
+            android:layout_centerInParent="true"
+             android:gravity="center_horizontal"
+            android:textColor="@color/black"
+            android:layout_height="wrap_content"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_marginTop="20sp"
+            android:id="@+id/rec"
+            android:layout_height="wrap_content"/>
+
+    </RelativeLayout>
+
+
+</LinearLayout>

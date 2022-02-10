@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    android:background="@color/white"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".page.LoginPage">
+
+    <ImageView
+        android:layout_marginTop="30sp"
+        android:src="@drawable/earnwealth"
+        android:layout_width="match_parent"
+        android:layout_height="60sp"/>
+
+
+    <RelativeLayout
+        android:paddingTop="11sp"
+        android:paddingBottom="11sp"
+        android:paddingLeft="27sp"
+        android:layout_marginTop="15sp"
+        android:paddingRight="27sp"
+        android:layout_width="wrap_content"
+        android:background="@drawable/right_curve_only"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:textSize="14sp"
+            android:text="Login Page"
+            android:textColor="@color/white"
+            android:layout_height="wrap_content"/>
+
+    </RelativeLayout>
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_marginTop="20sp"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="15sp"
+        app:cardCornerRadius="15sp"
+        app:cardElevation="4sp"
+        android:layout_marginRight="15sp"
+        android:layout_height="wrap_content">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:paddingRight="15sp"
+            android:paddingLeft="15sp"
+            android:padding="20sp"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="24sp"
+                    android:src="@drawable/ic_baseline_person_24"
+                    android:layout_height="24sp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:text="Username"
+                    android:textSize="15sp"
+                    android:layout_marginLeft="8sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+
+
+            <EditText
+                android:layout_marginTop="8sp"
+                android:inputType="textEmailAddress"
+                android:paddingTop="11sp"
+                android:paddingLeft="8sp"
+                android:id="@+id/edtEmail"
+                android:paddingRight="8sp"
+                android:singleLine="true"
+                android:paddingBottom="11sp"
+                android:hint="Enter User Email ID"
+                android:textSize="16sp"
+                android:layout_width="match_parent"
+                android:background="@drawable/edt_bg"
+                android:layout_height="wrap_content"/>
+
+
+            <LinearLayout
+                android:layout_marginTop="20sp"
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="24sp"
+                    android:src="@drawable/ic_baseline_vpn_key_24"
+                    android:layout_height="24sp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:text="Password"
+                    android:textSize="15sp"
+                    android:layout_marginLeft="8sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/inputLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:hintEnabled="false"
+                app:passwordToggleEnabled="true">
+
+                <EditText
+                    android:layout_marginTop="8sp"
+                    android:inputType="textEmailAddress"
+                    android:paddingTop="11sp"
+                    android:paddingLeft="8sp"
+                    android:paddingRight="8sp"
+                    android:id="@+id/edtPassword"
+                    android:singleLine="true"
+                    android:paddingBottom="11sp"
+                    android:hint="Enter User Email ID"
+                    android:textSize="16sp"
+                    android:layout_width="match_parent"
+                    android:background="@drawable/edt_bg"
+                    android:layout_height="wrap_content"/>
+
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_marginTop="30sp"
+                app:cardCornerRadius="16sp"
+                android:layout_marginLeft="20sp"
+                android:id="@+id/btnLogin"
+                android:layout_marginRight="20sp"
+                app:cardBackgroundColor="@color/color_primary"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:textColor="@color/white"
+                    android:text="LOGIN"
+                    android:gravity="center_horizontal"
+                    android:paddingTop="16sp"
+                    android:paddingBottom="16sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+    <RelativeLayout
+        android:paddingTop="11sp"
+        android:paddingBottom="11sp"
+        android:paddingLeft="27sp"
+        android:layout_marginTop="20sp"
+        android:layout_gravity="right"
+        android:paddingRight="27sp"
+        android:layout_width="wrap_content"
+        android:background="@drawable/left_curve_only"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:textSize="14sp"
+            android:text="Forgot Password"
+            android:textColor="@color/white"
+            android:layout_height="wrap_content"/>
+
+    </RelativeLayout>
+
+</LinearLayout>
